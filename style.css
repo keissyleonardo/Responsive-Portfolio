@@ -1,4 +1,4 @@
-
+/*/*/*
 body {
 
      background-color: rgb(180, 180, 180);
@@ -56,13 +56,14 @@ h1{
 .center {
     margin: left;
     margin-right: 0;
-    width: 30%;
+    width: 25%;
     border: 1px solid ;
     padding: 10px;
     padding-left: 30px;
     display: inline-block;
 
 }
+    
 
 .edge {
 
@@ -74,8 +75,65 @@ h1{
 
 }
 
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 980px)    
-@media screen and (max-width: 768px)  
+
+    
+   .borderClass {
+        width: 100%;
+        text-overflow: ellipsis;
+
+   }
+
+   .center { 
+        width: 50%;
+        text-overflow: ellipsis;
+     }
+     .adjust {
+
+    width: 50%;  
+    text-overflow: ellipsis;
+     }
+
+}
+
+    
+
 @media screen and (max-width: 640px)  
+{
+    .center { 
+        width: 70%;
+        text-overflow: ellipsis;
+     }
+ .adjust {
+
+    width: 70%;  /*
+    text-overflow: ellipsis;*/
+    -webkit-flex-flow: row-reverse wrap;
+     }
+
+
+    img {
+
+        width: : 100%;
+    }
+}
+
+@media screen and (max-width: 980px){
+
+
+        .center { 
+        width: 30%;
+        text-overflow: ellipsis;
+     }
+ .adjust {
+
+    width: 30%;  /*
+    text-overflow: ellipsis;*/
+    -webkit-flex-flow: row-reverse wrap;
+    text-align: left;
+     }
+
+
+}
 
